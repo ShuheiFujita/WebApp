@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
     root 'home#index'
     get "about", :to => 'about#index'
-   # get 'about/index'
     get "blog", :to => 'blog#index'
+    get "contacts", :to => 'contacts#new'
+    post "contacts", :to => 'contacts#create'
+    get "contacts/action"
+
    # get 'blog/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

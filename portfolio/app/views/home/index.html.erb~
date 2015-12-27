@@ -22,7 +22,7 @@
                              <li><a href="#"><%= link_to 'Home', root_path %></a></li>  
                              <li><a href="#"><%= link_to 'About', about_path %></a></li>  
                              <li><a href="#"><%= link_to 'Blog', blog_path %></a></li>  
-                             <li><a href="#">Contact</a></li>  
+                             <li><a href="#"><%= link_to 'Contact', contact_path %></a></li>  
                          </ul>  
                      </nav>  
                      </div>  
@@ -30,7 +30,7 @@
                      <div class="content">  
                      <section>  
                          <h1>Welcome to ShuheiFujita.net</h1>  
-                         <p>Now You are watching "Home" pages.</p>    
+                         <p>Now You are watching the "Home" page.</p>    
                      </section>  
                      </div>  
                 </div>  
