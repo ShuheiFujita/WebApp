@@ -7,7 +7,8 @@ class ContactsController < ApplicationController
         @contact = Contact.new(contact_params)
 
         if @contact.save
-            redirect_to  action: 'new', notice: 'Your Inquiry Registration Completed.'
+#            redirect_to  action: 'new', notice: 'Your Inquiry Registration Completed.'
+            redirect_to controller: 'contacts', action: 'action'
         else
             render 'new'
         end
