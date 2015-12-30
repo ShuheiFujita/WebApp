@@ -22,7 +22,7 @@
                              <li><a href="#"><%= link_to 'Home', root_path %></a></li>  
                              <li><a href="#"><%= link_to 'About', about_path %></a></li>  
                              <li><a href="#"><%= link_to 'Blog', blog_path %></a></li>  
-                             <li><a href="#"><%= link_to 'Contact', root_path %></a></li>  
+                             <li><a href="#"><%= link_to 'Contact', contacts_path %></a></li>  
                          </ul>  
                      </nav>  
                      </div>  
@@ -32,21 +32,13 @@
                          <h1>Welcome to ShuheiFujita.net</h1>  
                          <p>Now You are watching the "Contact" page.</p>
                          <%= form_for(@contact) do |f| %>
-                            <div class="field">
-                                <%= f.label :name%><br>
-                                <%= f.text_field :name%>
-                            </div>
-                             <div class="field">
-                                <%= f.label :mail_address%><br>
-                                <%= f.text_field :mail_address%>
-                            </div>
-                              <div class="field">
-                                <%= f.label :inquiry%><br>
-                                <%= f.text_field :inquiry%>
-                            </div>
-                               <div class="actions">
-                                <%= f.submit %>
-                            </div>
+                            <%= f.label :name, class: "textfield_label"  %><br>
+                            <%= f.text_field :name, class: "textfield" %><br>
+                            <%= f.label :mail_address, class: "textfield_label" %><br>
+                            <%= f.text_field :mail_address, class: "textfield" %><br>
+                            <%= f.label :inquiry, class: "textfield_label" %><br>
+                            <%= f.text_area :inquiry, class: "textarea" %><br>
+                            <%= f.submit "SEND" ,class: "button"%>
                         <% end %>
                      </section>  
                      </div>  

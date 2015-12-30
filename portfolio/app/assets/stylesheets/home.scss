@@ -66,5 +66,30 @@ p {
     color: #444;
 }
 
+.textfield_label {
+    margin: 20px 0 0 20px;
+}
 
+.textfield {
+    margin: 5px 0 5px 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+}
+
+.textarea {
+    margin: 5px 0 5px 20px;
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+    width: 400px;
+    height: 8.0rem;
+    color: #444;
+
+}
+
+.button {
+    margin: 10px 0px 0px 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+    padding: 5px 10px;
+}
 
