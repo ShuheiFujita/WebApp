@@ -9,7 +9,7 @@
 
 /* htmlタグ内およびbodyタグ内。htmlタグのみでよいのでは？ */  
 html, body {  
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica;
     background-color: #f5f5f5
 }  
   
@@ -26,8 +26,15 @@ article {
 /* h1タグ */
 h1 {  
     margin: 20px 0 0 20px;  
-    font-size: 2.5rem;  
+    font-size: 2.0rem;
     color: #555;  
+}
+
+.firstname, .lastname, .domain {
+    margin: 0 0 0 20px;
+    font-family: Futura, sans-serif;
+    font-size: 2.0rem;
+    color: #555;
 }
 /*
 h1 .lastname {  
@@ -38,6 +45,7 @@ h1 .domain {
     margin: 0 0 0 65px;
 }
 */
+
 /* nav */
 nav {  
     margin: 60px 0 0 20px;  
@@ -50,14 +58,16 @@ li {
 }  
 /* a */
 a {  
-    text-decoration: none;  
-    font-size: 1.25rem;  
+    text-decoration: none;
+    font-family: Futura;
+    font-size: 1.1rem;
+    font-weight: 100;
     color: #444;  
 }  
 
 /* section */
 section {  
-    margin: 0;  
+    margin: 20px 0 0 0;  
 }
 /* p */
 p {  
