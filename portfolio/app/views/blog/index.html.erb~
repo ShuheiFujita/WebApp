@@ -8,15 +8,15 @@
         </head>  
       
         <body>  
-            <article>  
-                <h1>  
-                <div class="firstname">Shuhei</div>  
-                <div class="lastname">Fujita</div>  
-                <div class="domain">.net</div>  
-                </h1>  
+            <article>
+                <div class="main">
+                    <div class="index">
+                    <h1>  
+                        <div class="firstname">Shuhei</div>  
+                        <div class="lastname">Fujita</div>  
+                        <div class="domain">.net</div>  
+                    </h1>  
       
-                <div class="main">  
-                    <div class="index">  
                      <nav>  
                          <ul>  
                              <li><a href="#"><%= link_to 'Home', root_path %></a></li>  
