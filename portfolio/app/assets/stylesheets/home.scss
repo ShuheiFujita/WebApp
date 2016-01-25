@@ -134,7 +134,7 @@ p {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    position: relative; left: 275px;
+    position: relative; left: 277px;
 
 }
 
@@ -144,5 +144,22 @@ p {
     font-size: 1.0rem;  
     color: #444;
 
+}
+
+.left_cell_future {
+    width: 300px;
+    height: 60px;
+    border-right: 1px dashed #444;
+    padding: 10px 20px 0 0;
+    text-align: right;
+    /* margin: 0 0 0 50px;*/
+}
+
+.right_cell_future {
+    width: 300px;
+    height: 60px;
+    border-left: 1px dashed #444;
+    padding: 10px 0 0 20px;
+    text-align: left;
 }
 
