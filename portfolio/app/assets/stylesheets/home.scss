@@ -163,3 +163,10 @@ p {
     text-align: left;
 }
 
+.circle_important .hover_pictures {
+    display: none;
+}
+
+.circle_important:hover .hover_pictures {
+    display: block;
+}
