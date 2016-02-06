@@ -170,3 +170,18 @@ p {
 .circle_important:hover .hover_pictures {
     display: block;
 }
+
+.circle .hover_pictures{
+    display: none;
+}
+
+.circle:hover .hover_pictures{
+    display: block;
+}
+
+
+.hover_pictures {
+    width: 330px;
+    height: 330px;
+    margin: 0 0 0 350px;
+}
