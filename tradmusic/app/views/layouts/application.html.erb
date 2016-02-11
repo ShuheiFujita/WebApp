@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tradmusic</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+  <title>WorldTraditionalMusic.net</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <article>
+        <div class="main">
+            <div class="index">
+            <h1>
+                <div class="MainTitle">
+                    WorldTraditionalMusic.net
+                </div>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Africa</li>
+                    <li><a href="#">Amrica</li>
+                    <li><a href="#">Asia</li>
+                    <li><a href="#">Europe</li>
+                </ul>
+            </nav>
+            </div>
+            
+            <%= yield %>
 
-<%= yield %>
+        </div>
+    </article>
+
 
 </body>
 </html>
