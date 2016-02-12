@@ -1,3 +1,113 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@charset "utf-8";  
+  
+/* cssセレクタの説明*/
+/* 全体要素 */
+* {  
+    margin: 0;  
+    padding: 0;  
+}  
+
+html, body {  
+    font-family: Helvetica;
+    background-color: #f5f5f5
+}  
+  
+/* articleタグ */
+article {  
+    width: 800px;  
+}  
+  
+/* mainタグ */
+.main {  
+    display: flex;  
+}  
+  
+/* h1タグ */
+h1 {  
+    margin: 20px 0 0 20px;
+    font-family: Futura, sans-serif;
+    font-size: 1.8rem;
+    color: #555;  
+}
+
+.maintitle {
+    margin: 0 0 0 20px;
+    font-family: Courier, sans-serif;
+    font-size: 2.0rem;
+    color: #555;
+}
+/*
+h1 .lastname {  
+    margin: 0 0 0 35px;  
+}
+
+h1 .domain {  
+    margin: 0 0 0 65px;
+}
+*/
+
+/* nav */
+nav {  
+    margin: 60px 0 0 20px;  
+    width: 200px;  
+}  
+/* li */
+li {  
+    margin: 25px 0 0 20px;  
+    list-style: none;  
+}  
+/* a */
+a {  
+    text-decoration: none;
+    font-family: Futura;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #444;  
+}  
+
+/* section */
+section {  
+    margin: 20px 0 0 0;  
+}
+/* p */
+p {  
+    margin: 20px 0 0 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+}
+
+.textfield_label {
+    margin: 20px 0 0 20px;
+}
+
+.textfield {
+    margin: 5px 0 5px 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+}
+
+.textarea {
+    margin: 5px 0 5px 20px;
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+    width: 400px;
+    height: 8.0rem;
+    color: #444;
+
+}
+
+.button {
+    margin: 10px 0px 0px 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+    padding: 5px 10px;
+}
+
+.main {
+    display: flex;
+    margin: 0 0 0 20px;  
+    font-size: 1.0rem;  
+    color: #444;
+
+}
+
