@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
-  <title>WorldTraditionalMusic.net</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+    <title>WorldTraditionalMusic.net</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript"><!--
+    function sublist( target ) {
+        var TargetList = target.parentNode.getElementsByTagName('ul');
+        if ( TargetList[0].style.display == 'none' ) {
+            TargetList[0].style.display = 'block';
+        }
+        else {
+            TargetList[0].style.display = 'none';
+        }
+    }
+// --></script>
 </head>
 <body>
     <article>
@@ -14,18 +25,21 @@
             <div class="maintitle">
                 <div class="maintitle1">WORLD</div>
                 <div class="maintitle2">TRADITIONAL</div>
-                <div class="maintitle3">MUSIC</div>
-                <div class="maintitle4">.net</div>
+                <div class="maintitle3">MUSIC.net</div>
             </div>
         </h1>
         <div class="main">
             <div class="index">
             <nav>
                 <ul>
-                    <li><a href="#">Africa</li>
-                    <li><a href="#">Amrica</li>
-                    <li><a href="#">Asia</li>
-                    <li><a href="#">Europe</li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">America</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#" class="menu" onclick="sublist(this); return false;">Europe</a></li>
+                        <ul>
+                            <li><a href="#">Ireland</a></li>
+                            <li><a href="#">Portugal</a></li>
+                        </ul>
                 </ul>
             </nav>
             </div>
