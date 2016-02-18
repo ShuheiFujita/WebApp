@@ -7,17 +7,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <script type="text/javascript"><!--
-    function sublist( target ) {
-        var TargetList = target.parentNode.getElementsByTagName('ul');
-        if ( TargetList[0].style.display == 'none' ) {
-            TargetList[0].style.display = 'block';
-        }
-        else {
-            TargetList[0].style.display = 'none';
-        }
-    }
-// --></script>
 </head>
 <body>
     <article>
@@ -35,10 +24,10 @@
                     <li><a href="#">Africa</a></li>
                     <li><a href="#">America</a></li>
                     <li><a href="#">Asia</a></li>
-                    <li><a href="#" class="menu" onclick="sublist(this); return false;">Europe</a></li>
+                    <li class="main_index"><a href="#" onclick="ShowSubIndex();">Europe</a></li>
                         <ul>
-                            <li><a href="#">Ireland</a></li>
-                            <li><a href="#">Portugal</a></li>
+                            <li class="sub_index"><a href="#">Ireland</a></li>
+                            <li class="sub_index"><a href="#">Portugal</a></li>
                         </ul>
                 </ul>
             </nav>
@@ -49,6 +38,12 @@
         </div>
     </article>
 
+    <script>
+    function ShowSubIndex(){
+       document.getElementsByClassName("sub_index").style.display = "";
+       //window.alert("test");
+    }
+    </script>
 
 </body>
 </html>
