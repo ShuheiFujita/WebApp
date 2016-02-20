@@ -40,8 +40,13 @@
 
     <script>
     function ShowSubIndex(){
-        document.getElementsByClassName("sub_index")[0].style.display = "block";
-        document.getElementsByClassName("sub_index")[1].style.display = "block";
+        if (document.getElementsByClassName("sub_index")[0].style.display == "none") {
+            document.getElementsByClassName("sub_index")[0].style.display = "block";
+            document.getElementsByClassName("sub_index")[1].style.display = "block";
+        } else {
+            document.getElementsByClassName("sub_index")[0].style.display = "none";
+            document.getElementsByClassName("sub_index")[1].style.display = "none";
+        }
        //window.alert("test");
     }
     </script>
