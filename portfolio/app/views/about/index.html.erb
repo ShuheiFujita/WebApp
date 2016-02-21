@@ -43,7 +43,7 @@
     <div class="main">
         <div class="left_cell"></div>
         <div class="right_cell">
-            2010.9 ホステスエンタテイメント(レコード会社)に<br>インターンとして入社
+            2010.9 ホステスエンタテイメント(レコード会社)にインターンとして入社
         </div>
     </div>
     <div class="circle_important">
@@ -65,11 +65,24 @@
         <div class="left_cell">2012.4 Pro-X株式会社入社</div>
         <div class="right_cell"></div>
     </div>
-    <div class="circle_important"></div>
+    <div class="circle_important" onclick="ShowText();"></div>
     <div class="main">
-        <div class="left_cell_future"></div>
-        <div class="right_cell_future">2016.4 株式会社ユーネット入社?</div>
+        <div class="left_cell_future_last"></div>
+        <div class="right_cell_future_last">2016.4 株式会社ユーネット入社?</div>
     </div>
- 
+
+    <script>
+    function ShowText() {
+        if (document.getElementsByClassName("left_cell_future_last")[0].style.display == "none") {
+            document.getElementsByClassName("left_cell_future_last")[0].style.display = "block";
+            document.getElementsByClassName("right_cell_future_last")[0].style.display = "block";
+        } else {
+            document.getElementsByClassName("left_cell_future_last")[0].style.display = "none";
+            document.getElementsByClassName("right_cell_future_last")[0].style.display = "none";
+        }
+            //window.alert("test");
+    }
+    </script>
+
 </section>  
 </div>  
