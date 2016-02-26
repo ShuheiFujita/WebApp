@@ -24,7 +24,7 @@
                     <li><a href="#">Africa</a></li>
                     <li><a href="#">America</a></li>
                     <li><a href="#">Asia</a></li>
-                    <li class="main_index"><a href="#" onclick="ShowSubIndex();">Europe</a></li>
+                    <li class="main_index"><a href="#">Europe</a></li>
                         <ul>
                             <li class="sub_index"><a href="#">Ireland</a></li>
                             <li class="sub_index"><a href="#">Portugal</a></li>
@@ -49,6 +49,9 @@
         }
        //window.alert("test");
     }
+    var p = document.getElementsByClassName("main_index")[0];
+    
+    p.addEventListener('click', ShowSubIndex, false);
     </script>
 
 </body>
