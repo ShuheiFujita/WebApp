@@ -24,10 +24,10 @@
                     <li><a href="#">Africa</a></li>
                     <li><a href="#">America</a></li>
                     <li><a href="#">Asia</a></li>
-                    <li class="main_index"><a href="#">Europe</a></li>
+                    <li id="main_index4"><a href="#">Europe</a></li>
                         <ul>
-                            <li class="sub_index"><a href="#">Ireland</a></li>
-                            <li class="sub_index"><a href="#">Portugal</a></li>
+                            <li id="sub_index1"><a href="#">Ireland</a></li>
+                            <li id="sub_index2"><a href="#">Portugal</a></li>
                         </ul>
                 </ul>
             </nav>
@@ -40,16 +40,16 @@
 
     <script>
     function ShowSubIndex(){
-        if (document.getElementsByClassName("sub_index")[0].style.display == "none") {
-            document.getElementsByClassName("sub_index")[0].style.display = "block";
-            document.getElementsByClassName("sub_index")[1].style.display = "block";
+        if (document.getElementById("sub_index1").style.display == "none") {
+            document.getElementById("sub_index1").style.display = "block";
+            document.getElementById("sub_index2").style.display = "block";
         } else {
-            document.getElementsByClassName("sub_index")[0].style.display = "none";
-            document.getElementsByClassName("sub_index")[1].style.display = "none";
+            document.getElementById("sub_index1").style.display = "none";
+            document.getElementById("sub_index2").style.display = "none";
         }
        //window.alert("test");
     }
-    var p = document.getElementsByClassName("main_index")[0];
+    var p = document.getElementById("main_index4");
     
     p.addEventListener('click', ShowSubIndex, false);
     </script>
