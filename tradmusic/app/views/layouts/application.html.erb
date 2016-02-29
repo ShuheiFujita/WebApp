@@ -39,7 +39,19 @@
     </article>
 
     <script>
-    function ShowSubIndex(){
+//    function ShowSubIndex(){
+//        if (document.getElementById("sub_index1").style.display == "none") {
+//            document.getElementById("sub_index1").style.display = "block";
+//            document.getElementById("sub_index2").style.display = "block";
+//        } else {
+//            document.getElementById("sub_index1").style.display = "none";
+//            document.getElementById("sub_index2").style.display = "none";
+//        }
+//       //window.alert("test");
+//    }
+    var p = document.getElementById("main_index4");
+    
+    p.addEventListener('click', function(){
         if (document.getElementById("sub_index1").style.display == "none") {
             document.getElementById("sub_index1").style.display = "block";
             document.getElementById("sub_index2").style.display = "block";
@@ -47,11 +59,9 @@
             document.getElementById("sub_index1").style.display = "none";
             document.getElementById("sub_index2").style.display = "none";
         }
-       //window.alert("test");
     }
-    var p = document.getElementById("main_index4");
-    
-    p.addEventListener('click', ShowSubIndex, false);
+    ,false);
+
     </script>
 
 </body>
